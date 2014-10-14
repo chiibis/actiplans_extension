@@ -1,0 +1,33 @@
+{
+    "manifest_version": 2,
+
+    "name": "ActiPlans extension",
+    "description": "Summary view for actiPlans",
+    "version": "0.3",
+    "background": {
+        "scripts": ["background.js"]
+    },
+    "content_scripts": [
+        {
+            "matches": ["*://online.actiplans.com/*"],
+            "css": ["css/style.css"],
+            "js": ["third_party/jquery-2.1.0.min.js"],
+            "run_at" :"document_start"
+        },
+        {
+            "matches": ["*://online.actiplans.com/adtt/user/my_schedule.do/*"],
+            "js": ["content/table_view.js"],
+            "run_at" : "document_start"
+        }
+    ],
+    "icons": {
+        "128": "icon_128.png",
+        "16": "images/icon_48.png"
+    },
+
+    "permissions": ["tabs","storage"],
+    "browser_action": {
+        "default_icon": "images/icon_19.png",
+        "default_title": "Go to ActiPlans"
+    }
+}

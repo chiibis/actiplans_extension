@@ -1,0 +1,54 @@
+#ap-summaryView {
+    padding: 15px 0;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+#ap-summaryView .pageTitle{
+   /*float: left;*/
+    margin-bottom: 10px;
+}
+
+.ap-userListCont {
+    height: 100%;
+    padding: 10px;
+    padding-left: 20px;
+
+
+    margin-top:10px;
+    margin-right:5px;
+
+    display: inline-block;
+    min-width: 214px;
+    vertical-align: top;
+
+    border: 1px solid rgb(207, 206, 206);
+    background-color: #f6f6f6;
+    background-size: 5px 100%;
+    background-repeat: repeat-y;
+}
+
+.ap-userListHeader {
+    font-size: 14px;
+    font-weight: bold;
+    color: #4b4b4b;
+
+}
+
+.ap-userList {
+    color: rgb(75,75,75);
+    list-style-type: square;
+    font: normal 12px Arial;
+    padding-left: 15px;
+    margin-bottom: 5px;
+}
+
+.ap-remoteWork {
+    background-image: url('../img/default/leave_types/chart_icons/leave_icon_2.gif');
+}
+.ap-leaveTime {
+    background-image: url('../img/default/leave_types/chart_icons/leave_icon_3.gif');
+}
+.ap-sickLeave {
+    background-image: url('../img/default/leave_types/chart_icons/leave_icon_1.gif');
+}

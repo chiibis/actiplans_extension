@@ -1,4 +1,4 @@
 ### ActiPLANs browser extension
 
-Small extension schedule page. 
+Small extension for schedule page. 
 Add "Summary" view
