@@ -15,7 +15,7 @@
             "run_at" :"document_start"
         },
         {
-            "matches": ["*://online.actiplans.com/adtt/user/my_schedule.do/*"],
+            "matches": ["*://online.actiplans.com/*/user/my_schedule.do*"],
             "js": ["content/table_view.js"],
             "run_at" : "document_start"
         }
