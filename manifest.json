@@ -3,19 +3,19 @@
 
     "name": "ActiPlans extension",
     "description": "Summary view for actiPlans",
-    "version": "0.3",
+    "version": "0.4",
     "background": {
         "scripts": ["background.js"]
     },
     "content_scripts": [
         {
-            "matches": ["*://online.actiplans.com/*"],
+            "matches": ["*://adtt.actiplans.com/*"],
             "css": ["css/style.css"],
             "js": ["third_party/jquery-2.1.0.min.js"],
             "run_at" :"document_start"
         },
         {
-            "matches": ["*://online.actiplans.com/*/user/my_schedule.do*"],
+            "matches": ["*://adtt.actiplans.com/*/user/my_schedule.do*"],
             "js": ["content/table_view.js"],
             "run_at" : "document_start"
         }

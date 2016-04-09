@@ -1,4 +1,4 @@
-function modifyPage(){
+function modifyPage() {
 
     var listOfAbsence = {
         sick : [],
@@ -58,7 +58,7 @@ function modifyPage(){
         return el;
     }
 
-    var cont = $('#contentDiv #contentInnerDiv');
+    var cont = $('#contentInnerDiv');
     var sumView = createSummaryView();
 
     cont.prepend(sumView);
@@ -66,7 +66,7 @@ function modifyPage(){
 
 document.addEventListener('DOMContentLoaded',function(){
 
-    var checkTable = $('#my-schedule-tabs .colleaguesTab').hasClass('ui-state-active');
-    (checkTable) ? modifyPage() : $('.colleaguesTab a').one('click',function(){  modifyPage()  });
+    var checkTable = $('#pageTabsSwitcher #1').hasClass('selected');
+    (checkTable) ? modifyPage() : $('#1').one('click', function(){  modifyPage()  });
 
 });
