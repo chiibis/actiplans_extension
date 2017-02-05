@@ -44,11 +44,14 @@
 }
 
 .ap-remoteWork {
-    background-image: url('../img/default/leave_types/chart_icons/leave_icon_2.gif');
+    background-image: url('../img/default/leave_types/chart_icons/leave_icon_16.gif');
 }
 .ap-leaveTime {
     background-image: url('../img/default/leave_types/chart_icons/leave_icon_3.gif');
 }
 .ap-sickLeave {
     background-image: url('../img/default/leave_types/chart_icons/leave_icon_1.gif');
+}
+.ap-businessLeave {
+    background-image: url('../img/default/leave_types/chart_icons/leave_icon_11.gif');
 }
