@@ -4,7 +4,8 @@ function modifyPage() {
         sick : [],
         remote: [],
         vacation : [],
-        business : []
+        business : [],
+        timeOff : []
     };
 
     function populateListOfAbsence() {
@@ -27,7 +28,8 @@ function modifyPage() {
 
             if (person.todayCell.hasClass('leaveType1')) listOfAbsence.sick.push(person.name);
             if (person.todayCell.hasClass('leaveType16')) listOfAbsence.remote.push(person.name);
-            if (person.todayCell.hasClass('leaveType3') || person.todayCell.hasClass('leaveType6')) listOfAbsence.vacation.push(person.name);
+            if (person.todayCell.hasClass('leaveType6')) listOfAbsence.timeOff.push(person.name);
+            if (person.todayCell.hasClass('leaveType3')) listOfAbsence.vacation.push(person.name);
             if (person.todayCell.hasClass('leaveType11')) listOfAbsence.business.push(person.name);
         });
     }
@@ -57,6 +59,7 @@ function modifyPage() {
 
         el.append(createUserList('ap-remoteWork', listOfAbsence.remote, 'Remote Work'));
         el.append(createUserList('ap-leaveTime', listOfAbsence.vacation, 'Vacation'));
+        el.append(createUserList('ap-timeOff', listOfAbsence.timeOff, 'Time off'));
         el.append(createUserList('ap-sickLeave', listOfAbsence.sick, 'Sick Leave'));
         el.append(createUserList('ap-businessLeave', listOfAbsence.business, 'Business Trip'));
 
