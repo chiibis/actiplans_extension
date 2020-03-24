@@ -58,3 +58,7 @@
 .ap-timeOff {
     background-image: url('../img/default/leave_types/chart_icons/leave_icon_6.gif');
 }
+.ap-removeCovid {
+    margin-left: 30px;
+    background-image: url('data:image/gif;base64,R0lGODlhDwAwAIAAAKVh/wAAACH5BAAAAAAALAAAAAAPADAAAAIZhI+py+0Po5y02ouz3rz7D4biSJbmiaZVAQA7');
+}
